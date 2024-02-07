@@ -21,7 +21,7 @@ const reviewRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
 
 //const dbUrl = process.env.ATLASDB_URL;
-const dbUrl = process.env.ATLASDB_URL + "?retryWrites=false";
+const dbUrl = process.env.ATLASDB_URL;
 
 
 main()
