@@ -5,6 +5,7 @@ if (process.env.NODE_ENV != "production") {
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const port = 8080;
 const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
@@ -112,5 +113,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(8080, () => {
-  console.log("server is listening to port 8080");
+  console.log(`Server is running on http://localhost:${port}/Listings`);
 });
